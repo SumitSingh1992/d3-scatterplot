@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0 !important;
+}
+.header {
+    background-color: blue;
+    color: white;
+    padding: 1px 20px;
+}
+
+.box {
+    display: flex;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    border: 2px solid gray;
+    width: 70%;
+    height: 100px;
+}
+.population {
+    border-right: 2px solid gray;
+    width: 40%;
+    height: 120%;
+    padding: 1px;
+    margin: -10px;
+}
+.select-div{
+    background-color: #d1d1d1;
+}
+#selectButton{
+    margin: 10px 20px;
+    width: 200px;
+    padding: 5px 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    .header {
+        text-align: center;
+    }
+    .select-div{
+        text-align: center;
+    }
+    .population{
+        width: 100%;
+        text-align: center;
+        border-right: none;
+    }
+  }

@@ -1,0 +1,22 @@
+
+<header class="header">
+    <h1>ABC <br> CO</h1>
+</header>
+<!-- Initialize a select button -->
+<div class="select-div">
+    <select id="selectButton" (change)="update($event)"></select>
+</div>
+
+<div class="box">
+    <div class="population">
+        <h3>Wolrd Population</h3>
+        <h1>{{worldPopulation | number : '1.0-1'}} <sub>Bn</sub></h1>
+    </div>
+
+    <div class="density" *ngIf="desktop">
+        <app-desnity-graph *ngIf="densityData?.length" [data]="densityData"></app-desnity-graph>
+    </div>
+</div>
+
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz"></div>
